@@ -1,0 +1,125 @@
+@import '@siemens/ix/dist/siemens-ix/siemens-ix.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 10%;
+    --foreground: 210 20% 90%;
+
+    --card: 220 18% 14%;
+    --card-foreground: 210 20% 90%;
+
+    --popover: 220 18% 14%;
+    --popover-foreground: 210 20% 90%;
+
+    --primary: 190 100% 45%;
+    --primary-foreground: 220 20% 6%;
+
+    --secondary: 220 16% 20%;
+    --secondary-foreground: 210 20% 85%;
+
+    --muted: 220 14% 18%;
+    --muted-foreground: 215 12% 55%;
+
+    --accent: 190 80% 38%;
+    --accent-foreground: 220 20% 6%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 220 14% 22%;
+    --input: 220 14% 22%;
+    --ring: 190 100% 45%;
+
+    --radius: 0px;
+
+    --sidebar-background: 220 18% 12%;
+    --sidebar-foreground: 210 20% 85%;
+    --sidebar-primary: 190 100% 45%;
+    --sidebar-primary-foreground: 220 20% 6%;
+    --sidebar-accent: 220 14% 18%;
+    --sidebar-accent-foreground: 210 20% 85%;
+    --sidebar-border: 220 14% 22%;
+    --sidebar-ring: 190 100% 45%;
+
+    /* IX elevation system */
+    --elevation-1: 0 1px 3px 0 rgba(0,0,0,0.4);
+    --elevation-2: 0 4px 8px 0 rgba(0,0,0,0.4);
+    --elevation-3: 0 8px 16px 0 rgba(0,0,0,0.4);
+    --elevation-4: 0 16px 32px 0 rgba(0,0,0,0.5);
+
+    /* Quote-specific tokens */
+    --quote-mark: 190 100% 45%;
+    --quote-text: 210 15% 82%;
+    --quote-author: 190 60% 55%;
+    --quote-divider: 190 100% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Siemens Element typography utilities */
+.si-display {
+  font-size: 3rem;
+  line-height: 1.1;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+}
+
+.si-h1 {
+  font-size: 2.25rem;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.si-h2 {
+  font-size: 1.75rem;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.si-h3 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.si-body {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.si-caption {
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* Quote animation */
+@keyframes quote-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-quote-in {
+  animation: quote-fade-in 0.5s ease-out forwards;
+}
