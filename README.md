@@ -1,73 +1,103 @@
-# Welcome to your Lovable project
+# Stoic Wisdom
 
-## Project info
+A modern web application featuring classic Stoic philosophy quotes from the great masters - Seneca, Marcus Aurelius, and Epictetus. Explore timeless wisdom with beautiful design and intuitive interactions.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Features
 
-## How can I edit this code?
+- **Daily Quote**: Get a new Stoic quote every day based on the date
+- **Random Quotes**: Discover quotes at random to explore the collection
+- **Category Filtering**: Browse quotes by themes:
+  - Resilience
+  - Wisdom
+  - Mortality
+  - Happiness
+  - Discipline
+  - Virtue
+  - Mindfulness
+- **Favorites**: Save your favorite quotes for later
+- **Author Biographies**: Learn about the Stoic philosophers
+- **Reading Progress**: Track how many quotes you've explored
+- **Export as Image**: Download beautiful quote images
+- **Keyboard Shortcuts**:
+  - `Space` or `→` - New quote
+  - `C` - Copy quote
+  - `F` - Favorite/unfavorite
 
-There are several ways of editing your application.
+## Technologies
 
-**Use Lovable**
+- **React 18** - UI framework
+- **TypeScript** - Type safety
+- **Vite** - Build tool
+- **Tailwind CSS** - Styling
+- **shadcn/ui** - Component library
+- **@siemens/ix-react** - Design system components
+- **React Router** - Navigation
+- **Vitest** - Testing
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js (v20 or later)
+- npm
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+```bash
+# Clone the repository
+git clone https://github.com/csatarij/stoic-wisdom.git
+cd stoic-wisdom
 
-Follow these steps:
+# Install dependencies
+npm install
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Build
 
-**Use GitHub Codespaces**
+```bash
+# Build for production
+npm run build
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+# Preview production build
+npm run preview
+```
 
-## What technologies are used for this project?
+### Testing
 
-This project is built with:
+```bash
+# Run tests
+npm run test
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+# Run tests in watch mode
+npm run test:watch
+```
 
-## How can I deploy this project?
+### Linting
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+```bash
+# Run ESLint
+npm run lint
+```
 
-## Can I connect a custom domain to my Lovable project?
+## Live Demo
 
-Yes, you can!
+Visit the deployed application: [https://csatarij.github.io/stoic-wisdom/](https://csatarij.github.io/stoic-wisdom/)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Deployment
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+This project is automatically deployed to GitHub Pages using GitHub Actions. The deployment workflow is configured in `.github/workflows/deploy.yml`.
+
+To trigger a deployment, simply push to the `main` branch.
+
+## Origin
+
+This project was initially created using [Lovable](https://lovable.dev) and then exported to a local codebase for further development and customization.
+
+## License
+
+This project is private and proprietary.
